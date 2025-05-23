@@ -1,0 +1,89 @@
+// primary colors
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+// neutral colors
+$very-dark-blue-main-bg: hsl(217, 54%, 11%);
+$very-dark-blue-card-bg: hsl(216, 50%, 16%);
+$very-dark-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// breakpoints
+$mobile: 375px;
+$desktop: 1440px;
+
+.body {
+  font-family: var(--font-outfit-sans);
+  font-size: 18px;
+  margin: 0;
+  background-color: $very-dark-blue-main-bg;
+  color: $white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: $very-dark-blue-card-bg;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 300px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: $soft-blue;
+}
+
+.card-values {
+  font-size: .75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-value {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+}
+
+.card-eth {
+  color: $cyan;
+}
+
+.card-days {
+  color: $soft-blue;
+}
+
+.card-hr {
+  border-color: $very-dark-blue-line;
+}
+
+.card-avatar {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  color: $soft-blue;
+}
+
+.card-avatar img {
+  width: 2rem;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.card-avatar-name {
+  color: $white;
+}
